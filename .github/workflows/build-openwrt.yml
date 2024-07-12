@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name:  HC5962
+name:  D2
 
 on:
   repository_dispatch:
