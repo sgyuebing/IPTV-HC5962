@@ -3,7 +3,6 @@ config defaults
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option fullcone '1'
-	option synflood_protect '1'
 	option forward 'ACCEPT'
 
 config zone

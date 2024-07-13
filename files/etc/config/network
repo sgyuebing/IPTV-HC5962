@@ -29,7 +29,7 @@ config interface 'wan6'
 	option device 'wan'
 	option proto 'dhcpv6'
 
-config interface 'iptv_telecom'
+config interface 'CHINA_TELECOM'
 	option proto 'dhcp'
 	option device 'lan1'
 	option hostname '*'
