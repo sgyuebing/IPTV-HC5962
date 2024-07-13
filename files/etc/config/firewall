@@ -158,3 +158,13 @@ config redirect
 	option dest_ip '192.168.0.1'
 	option dest_port '80'
 
+config include 'passwall'
+	option type 'script'
+	option path '/var/etc/passwall.include'
+	option reload '1'
+
+config include 'passwall_server'
+	option type 'script'
+	option path '/var/etc/passwall_server.include'
+	option reload '1'
+

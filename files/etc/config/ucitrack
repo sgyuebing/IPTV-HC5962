@@ -58,3 +58,12 @@ config tinyproxy
 config autoreboot
 	option init 'autoreboot'
 
+config cpulimit
+	option init 'cpulimit'
+
+config passwall
+	option init 'passwall'
+
+config passwall_server
+	option init 'passwall_server'
+
