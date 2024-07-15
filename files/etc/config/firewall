@@ -139,6 +139,7 @@ config redirect
 	option src_dport '4020'
 	option dest_ip '192.168.0.1'
 	option dest_port '4020'
+	option enabled '0'
 
 config redirect
 	option dest 'lan'
@@ -148,6 +149,7 @@ config redirect
 	option src_dport '4021'
 	option dest_ip '192.168.0.1'
 	option dest_port '4021'
+	option enabled '0'
 
 config redirect
 	option dest 'lan'
@@ -157,6 +159,7 @@ config redirect
 	option src_dport '80'
 	option dest_ip '192.168.0.1'
 	option dest_port '80'
+	option enabled '0'
 
 config include 'passwall'
 	option type 'script'
@@ -166,5 +169,40 @@ config include 'passwall'
 config include 'passwall_server'
 	option type 'script'
 	option path '/var/etc/passwall_server.include'
+	option reload '1'
+
+config redirect
+	option dest 'lan'
+	option target 'DNAT'
+	option name '7700'
+	option src 'wan'
+	option src_dport '7700'
+	option dest_ip '192.168.0.1'
+	option dest_port '7700'
+	option enabled '0'
+
+config redirect
+	option dest 'lan'
+	option target 'DNAT'
+	option name '7800'
+	option src 'wan'
+	option src_dport '7800'
+	option dest_ip '192.168.0.1'
+	option dest_port '7800'
+	option enabled '0'
+
+config redirect
+	option dest 'lan'
+	option target 'DNAT'
+	option name '全部'
+	option src 'wan'
+	option src_dport '1-9999'
+	option dest_ip '192.168.0.1'
+	option dest_port '1-9999'
+
+config include 'iptvhelper'
+	option type 'script'
+	option path '/etc/firewall.iptvhelper'
+	option family 'any'
 	option reload '1'
 

@@ -2,6 +2,7 @@
 config globals
 	option workgroup 'WORKGROUP'
 	option description 'Ksmbd on OpenWrt'
+	option interface 'wan'
 
 config share
 	option name 'ssd'
