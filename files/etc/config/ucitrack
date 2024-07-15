@@ -55,11 +55,14 @@ config samba
 config tinyproxy
 	option init 'tinyproxy'
 
-config autoreboot
-	option init 'autoreboot'
-
 config cpulimit
 	option init 'cpulimit'
+
+config iptvhelper
+	option init 'iptvhelper'
+
+config autoreboot
+	option init 'autoreboot'
 
 config passwall
 	option init 'passwall'

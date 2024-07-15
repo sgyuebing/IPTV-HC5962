@@ -1,0 +1,14 @@
+config service 'pptpd'
+        option 'enabled' '1'   #使能
+        option 'localip' '192.168.1.1'    #连接VPN之后客户端看到的VPN服务器地址，应该不算是网关，但功能查不到
+        option 'remoteip' '192.168.1.2-5'   #客户端分配地址范围
+        option 'nat' '1'    #启用net装换，猜的
+        option 'internet' '1'   #能和局域网通信，猜的
+
+config 'login'    #能登陆的账号
+        option 'username' '123'
+        option 'password' '123'
+
+config 'login'
+        option 'username' 'x86'
+        option 'password' '123'
