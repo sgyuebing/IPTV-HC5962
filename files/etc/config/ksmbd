@@ -2,6 +2,7 @@
 config globals
 	option workgroup 'WORKGROUP'
 	option description 'Ksmbd on OpenWrt'
+	option allow_legacy_protocols '1'
 	option interface 'wan'
 
 config share
@@ -11,4 +12,5 @@ config share
 	option guest_ok 'yes'
 	option create_mask '0777'
 	option dir_mask '0777'
+	option users 'root'
 
