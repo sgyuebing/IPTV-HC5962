@@ -23,12 +23,12 @@ config led 'led_internet'
 	option dev 'lan1'
 	list mode 'link'
 	list mode 'rx'
-	option sysfs 'blue:internet'
+	option sysfs 'blue:sys'
 
 config led
 	option name 'sdyx'
 	option trigger 'netdev'
 	option dev 'lan2'
 	list mode 'rx'
-	option sysfs 'blue:sys'
+	option sysfs 'blue:internet'
 
