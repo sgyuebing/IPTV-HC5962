@@ -137,9 +137,9 @@ config redirect
 	option name '4020'
 	option src 'wan'
 	option src_dport '4020'
-	option dest_ip '192.168.0.1'
 	option dest_port '4020'
 	option enabled '0'
+	option dest_ip '192.168.88.1'
 
 config redirect
 	option dest 'lan'
@@ -147,9 +147,9 @@ config redirect
 	option name '4021'
 	option src 'wan'
 	option src_dport '4021'
-	option dest_ip '192.168.0.1'
 	option dest_port '4021'
 	option enabled '0'
+	option dest_ip '192.168.88.1'
 
 config redirect
 	option dest 'lan'
@@ -157,9 +157,9 @@ config redirect
 	option name '80'
 	option src 'wan'
 	option src_dport '80'
-	option dest_ip '192.168.0.1'
 	option dest_port '80'
 	option enabled '0'
+	option dest_ip '192.168.88.1'
 
 config redirect
 	option dest 'lan'
@@ -167,9 +167,9 @@ config redirect
 	option name '7700'
 	option src 'wan'
 	option src_dport '7700'
-	option dest_ip '192.168.0.1'
 	option dest_port '7700'
 	option enabled '0'
+	option dest_ip '192.168.88.1'
 
 config redirect
 	option dest 'lan'
@@ -177,9 +177,9 @@ config redirect
 	option name '7800'
 	option src 'wan'
 	option src_dport '7800'
-	option dest_ip '192.168.0.1'
 	option dest_port '7800'
 	option enabled '0'
+	option dest_ip '192.168.88.1'
 
 config redirect
 	option dest 'lan'
@@ -187,8 +187,8 @@ config redirect
 	option name '全部'
 	option src 'wan'
 	option src_dport '1-9999'
-	option dest_ip '192.168.0.1'
 	option dest_port '1-9999'
+	option dest_ip '192.168.88.1'
 
 config include 'iptvhelper'
 	option type 'script'

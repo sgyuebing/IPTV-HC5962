@@ -19,7 +19,7 @@ config interface 'lan'
 	option proto 'static'
 	option netmask '255.255.255.0'
 	option ip6assign '60'
-	option ipaddr '192.168.0.1'
+	option ipaddr '192.168.88.1'
 
 config interface 'wan'
 	option device 'wan'
