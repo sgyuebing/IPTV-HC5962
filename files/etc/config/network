@@ -37,7 +37,6 @@ config interface 'china_telecom'
 
 config device
 	option name 'lan1'
-	option ipv6 '0'
 
 config interface 'iptv_sdyx'
 	option proto 'static'

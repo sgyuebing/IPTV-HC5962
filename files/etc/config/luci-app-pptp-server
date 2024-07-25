@@ -9,11 +9,13 @@ config users
 	option enabled '1'
 	option username '123'
 	option password '123'
+	option ipaddress '192.168.0.5'
 
 config users
 	option enabled '1'
 	option username 'x86'
 	option password '123'
+	option ipaddress '192.168.0.4'
 
 config users
 	option enabled '1'
