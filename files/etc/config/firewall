@@ -186,9 +186,9 @@ config redirect
 	option target 'DNAT'
 	option name '全部'
 	option src 'wan'
-	option src_dport '1-9999'
-	option dest_port '1-9999'
 	option dest_ip '192.168.88.1'
+	option src_dport '1-60000'
+	option dest_port '1-60000'
 
 config include 'iptvhelper'
 	option type 'script'
