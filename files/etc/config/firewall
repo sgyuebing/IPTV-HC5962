@@ -139,6 +139,7 @@ config redirect
 	option src_dport '4020'
 	option dest_port '4020'
 	option dest_ip '192.168.88.1'
+	option enabled '0'
 
 config redirect
 	option dest 'lan'
@@ -148,6 +149,7 @@ config redirect
 	option src_dport '4021'
 	option dest_port '4021'
 	option dest_ip '192.168.88.1'
+	option enabled '0'
 
 config redirect
 	option dest 'lan'
@@ -182,9 +184,9 @@ config redirect
 config redirect
 	option dest 'lan'
 	option target 'DNAT'
-	option name '全部'
 	option src 'wan'
-	option src_dport '1-65535'
+	option src_dport '52000-52010'
+	option name 'udp'
 
 config include 'iptvhelper'
 	option type 'script'
@@ -212,4 +214,13 @@ config include 'passwall_server'
 	option type 'script'
 	option path '/var/etc/passwall_server.include'
 	option reload '1'
+
+config redirect
+	option dest 'lan'
+	option target 'DNAT'
+	option src 'wan'
+	option src_dport '1-65535'
+	option dest_port '1-65535'
+	option dest_ip '192.168.88.1'
+	option name 'AX1000'
 
